@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Working Theory</title>
+    <meta
+      name="description"
+      content="Working Theory, the research portfolio of Bhakti Chitroda at CERN."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Instrument+Serif:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <canvas class="particle-field" id="particleField" aria-hidden="true"></canvas>
+    <div class="cursor-ring" id="cursorRing" aria-hidden="true">
+      <span class="cursor-cloud"></span>
+      <span class="cursor-core cursor-core-a"></span>
+      <span class="cursor-core cursor-core-b"></span>
+      <span class="cursor-core cursor-core-c"></span>
+      <span class="cursor-point"></span>
+    </div>
+
+    <header class="site-header">
+      <a class="brand" href="#top">Working Theory</a>
+      <nav class="site-nav">
+        <a href="#top">Home</a>
+        <a href="#about">About</a>
+        <a href="#explore">Explore</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero section">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Bhakti Chitroda / CERN / ATLAS</p>
+          <h1 class="scrambled-title" id="scrambledTitle" data-text="Working Theory">
+            Working Theory
+          </h1>
+          <p class="hero-kicker">
+            Particle physics research across detector-scale analysis, collaboration work,
+            and experiment transitions from CMS to ATLAS.
+          </p>
+          <p class="hero-text" id="heroSummary"></p>
+          <div class="hero-actions">
+            <a class="button primary" href="#contact">Get in touch</a>
+            <a class="button secondary" href="#work">View work</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section work-section" id="work">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Selected Work</p>
+          <h2>Projects, analysis focus, and collaboration milestones.</h2>
+        </div>
+        <div class="project-stack" id="projectGrid"></div>
+      </section>
+
+      <section class="section about-section" id="about">
+        <div class="section-heading reveal">
+          <p class="eyebrow">About</p>
+          <h2>Research context, affiliations, and citation profiles.</h2>
+        </div>
+        <div class="about-layout reveal">
+          <article class="about-summary">
+            <p class="card-label">Current Focus</p>
+            <h3>ATLAS analysis pipeline</h3>
+            <p id="currentResearch"></p>
+            <p class="card-label about-secondary-label">CMS Background</p>
+            <p id="cmsResearch"></p>
+          </article>
+          <div class="about-side">
+            <div class="citation-grid" id="citationGrid"></div>
+            <div class="history-layout">
+              <div class="tab-list" id="tabList" role="tablist" aria-label="Affiliation history"></div>
+              <div class="tab-panel" id="tabPanel"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section explore-section" id="explore">
+        <div class="section-heading reveal">
+          <p class="eyebrow">For the Curious</p>
+          <h2>The science behind the work.</h2>
+        </div>
+        <p class="explore-intro reveal">A plain-language guide to CERN, the LHC, and what happens when protons collide — written for anyone who wants to understand what we study and why it matters. Click any card to read more.</p>
+        <div class="explore-grid" id="exploreGrid"></div>
+      </section>
+
+      <section class="section contact-section" id="contact">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Contact</p>
+          <h2>Open to collaboration, analysis discussions, and research exchange.</h2>
+        </div>
+        <div class="contact-grid reveal">
+          <div id="contactLinks" class="contact-links"></div>
+          <p id="contactNote" class="contact-note"></p>
+        </div>
+      </section>
+    </main>
+
+    <script src="content.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
